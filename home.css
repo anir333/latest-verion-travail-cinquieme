@@ -272,9 +272,9 @@ nav ul a:hover {
 /* End Body */
 
 /* Grid section */
-/* input[type="checkbox"]:checked ~ .Final-section {
+input[type="checkbox"]:checked ~ .Final-section {
     margin-top: -750px;
-} */
+}
 .Final-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr 1fr 2fr);
