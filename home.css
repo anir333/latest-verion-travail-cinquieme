@@ -168,6 +168,8 @@ nav ul a:hover {
     input[type="checkbox"]:checked ~ .about-page {
         /* display: none; */
         animation: about-section-off 1s forwards;
+        /* display: none; */
+        /* transition: 12s; */
     }
     .about-page {
         height: 777px;
@@ -271,9 +273,23 @@ nav ul a:hover {
     /* End Introduction */
 /* End Body */
 
+/* Go to menu Section */
+/* input[type="checkbox"]:checked ~ .Go-TO-Menu {
+    margin-top: -150px;    
+    transition-delay: 1s;
+} */
+.Final-section .Go-TO-Menu {
+    border: 2px solid green;
+    height: 80px;
+    margin-top: -200px;
+    /* position: relative; */
+}
+/* End of go to menu Section */
+
 /* Grid section */
 input[type="checkbox"]:checked ~ .Final-section {
-    margin-top: -750px;
+    margin-top: -850px;    
+    transition-delay: 1s;
 }
 .Final-section {
     display: grid;
@@ -286,56 +302,72 @@ input[type="checkbox"]:checked ~ .Final-section {
     text-align: center;
     grid-area: auto;
 }
-.Final-section div {
-    /* border: 2px solid red; */
-}
+
+/* Programming Knowledge */
 .Final-section .Programming-Knowledge {
     grid-column-start: 1;
     grid-column-end: 8;
     height: 215px; 
     background-image: url(images/Programming-Knowledge.png);
-    /* background-image: url(/images/Programming-Knowledge.png); */
     background-repeat: repeat;
     background-size: 33%;
     border-radius: 18px;
     position: relative;
-    text-align: center;
-    align-items: center;
-    /* z-index: 1; */
 }
 .Final-section .Programming-Knowledge .opacity {
     width: 100%;
-    height: 215px;
+    /* height: 215px; */
+    height: inherit;
     z-index: 1;
     opacity: 83%;
     border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
 }
-/* .Final-section .Programming-Knowledge .content {
-    border: 2px solid red;
-    position: absolute;
-    z-index: 10;
-    height: 215px;
-    width: 100%;
-} */
-/* .Final-section .Programming-Knowledge .content .informacion {
-    position: relative;
-    margin-top: 145px;
-    display: none;
-    color: white;
-    line-height: normal;
-} */
+.Final-section .Programming-Knowledge:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
 .Final-section .Programming-Knowledge h1 {
     position: absolute;
     z-index: 1;
     color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: auto;
     width: 100%;
-    height: 215px;
     text-align: center;
-    line-height: 190px;
-
+    margin-top: 80px;
+    text-align: center;
+    animation: title-up-programming-knowledge-off 1s forwards;
 }
+.Final-section .Programming-Knowledge h1 .title1 {
+    margin: auto;
+    width: 75%;
+}
+.Final-section .Programming-Knowledge:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+}
+.Final-section .Programming-Knowledge:hover h1 .title1 {
+    animation: title-background-programming-knowledge 1s forwards;
+}
+.Final-section .Programming-Knowledge .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #0533bd;
+    border-radius: 10px;
+    margin-top: 45px;
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .Programming-Knowledge:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End Programming Knowledge */
+
+/* Programming Languages */
 .Final-section .Programming-Languages {
     grid-column-start: 8;
     grid-column-end: 15; 
@@ -343,49 +375,448 @@ input[type="checkbox"]:checked ~ .Final-section {
     margin-top: -60px;
     /* width: 450%; */ 
     height: 435px;
+    
+    background-image: url(images/programming-languages.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .Programming-Languages .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .Programming-Languages:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .Programming-Languages h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 185px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .Programming-Languages:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+}
+.Final-section .Programming-Languages .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .Programming-Languages:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End Programming Languages */
+
+
+/* Html/Css */
 .Final-section .Html-CSS {
     grid-row-start: 2; 
     grid-column-start: 1;
     grid-column-end: 4;
     margin-top: -60px;  
     height: 215px;
+
+    background-image: url(images/Html-CSSfinal.png);
+    background-repeat: repeat-y;
+    background-size: 108%;
+    /* background-size:auto; */
+    /* background-repeat: repeat-y; */
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .Html-CSS .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .Html-CSS:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .Html-CSS h1 {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 92.5px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .Html-CSS:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+    color: white;
+    transition: 1s;
+}
+.Final-section .Html-CSS .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #00ffdc;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .Html-CSS:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End Html/Css */
+
+
+
+
+
+
+
+
+
+/* JavaScript */
 .Final-section .JavaScript {
     grid-row-start: 2;
     grid-column-start: 4;
     grid-column-end: 8;
     margin-top: -60px; 
     height: 215px;
+    background-image: url(images/JavaScript-background.png);
+    /* background-repeat: repeat; */
+    background-size: 100%;
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .JavaScript .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .JavaScript:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .JavaScript h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 92.5px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .JavaScript:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+    background-color: #f8da59 ;
+    box-shadow: 0px 13px 15px -2px rgba(0,0,0,0.9);
+    transition: 1s ease-in-out;
+    /* border: 1px solid black; */
+}
+.Final-section .JavaScript .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #f8da59;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .JavaScript:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End JavaScript */
 
+
+/* Python */
 .Final-section .Python {
     grid-column-start: 8;
     grid-column-end: 15; 
     /* width: 450%; */
     height: 215px;
+    background-image: url(images/Pythonfinal.png);
+    background-repeat: repeat-y;
+    background-size: 112%;
+    /* background-size:auto; */
+    /* background-repeat: repeat-y; */
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .Python .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .Python:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .Python h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 92.5px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .Python:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+    /* color: white; */
+    /* transition: 1s; */
+} 
+.Final-section .Python .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #0976b9;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .Python:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End Python */
+
+
+/* Ruby */
 .Final-section .Ruby {
     grid-column-start: 1;
     grid-column-end: 4; 
     grid-row-start: 3;
     margin-top: -120.5px;    
-    height: 210px;
+    height: 210px;   
+    background-image: url(images/Ruby-Background.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .Ruby .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .Ruby:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .Ruby h1 {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .Ruby:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+}
+.Final-section .Ruby .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #fbd3a2;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .Ruby:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End Ruby */
+
+
+/* SQL */
 .Final-section .SQL {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 3;
     margin-top: -120.5px;  
     height: 210px;
+    
+    background-image: url(images/SQL-background.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .SQL .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .SQL:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .SQL h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .SQL:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+    color: black;
+    transition: 1s ease-in-out;
+}
+.Final-section .SQL .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #ef0e13;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .SQL:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End SQL */
+
+
+/* React */
 .Final-section .React {
     grid-column-start: 6;
     grid-column-end: 8;
     grid-row-start: 3;
     margin-top: -120.5px;  
     height: 210px;
+    background-image: url(images/React-background.png);
+    background-repeat: repeat;
+    background-size: 150%;
+    border-radius: 18px;
+    position: relative;
 }
+.Final-section .React .opacity {
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    opacity: 83%;
+    border-radius: 15px;
+    animation: opacity-programming-knowledge-off 1s forwards;
+}
+.Final-section .React:hover .opacity {
+    animation: opacity-programming-knowledge 1s forwards;
+}
+.Final-section .React h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 25px;
+    animation: title-up-programming-knowledge-off 1s forwards;
+}
+.Final-section .React:hover h1 {
+    animation: title-up-programming-knowledge 1s forwards;
+}
+.Final-section .React .informacion {
+    color: white;
+    /* border: 1px solid black; */
+    background-color: #0f256e;
+    border-radius: 10px;
+    margin-top: 45px;
+    /* margin-top: 75px; for media*/
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0%;
+    animation: text-up-hover-programming-knowledge-off 1s forwards;
+    box-shadow: -2px 6px 15px 4px rgba(115,115,115,0.76);
+}
+.Final-section .React:hover .informacion {
+    animation: text-up-hover-programming-knowledge 1s forwards;
+}
+/* End React */
+
 /* End Grid Section */
 
 /* Keyframes (Animations) */
@@ -565,4 +996,62 @@ input[type="checkbox"]:checked ~ .Final-section {
         }
     }
     /* End Introduction page keyframes */
+
+    /* Final/Grid Section */    
+    @keyframes text-up-hover-programming-knowledge {
+        0% {
+            margin-top: 0px;
+            height: 15px;
+        }
+        100% {
+            opacity: 100%;
+            /* margin-top: 0px; */
+            /* margin-top: 100px; */
+        }
+    }
+    @keyframes text-up-hover-programming-knowledge-off {
+        0% {
+            opacity: 100%;
+            /* margin-top: 0px; */
+            /* margin-top: 100px; */
+        }
+        100% {
+            margin-top: 0px;
+            height: 15px;
+        }
+    }       
+    @keyframes title-up-programming-knowledge {
+        0% {}
+        100% {
+            margin-top: 0px;
+        }    
+    }
+    @keyframes title-up-programming-knowledge-off {
+        0% {
+            margin-top: 0px;
+        }
+        100% {}    
+    }
+    @keyframes title-background-programming-knowledge {
+        0% {}
+        100% {
+            /* background-color: #0533bd; */
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+        }
+    }
+    @keyframes opacity-programming-knowledge {
+        0% {}
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes opacity-programming-knowledge-off {
+        0% {
+            opacity: 0%;
+        }
+        100% {}
+    }
+    /* End Final/Grid Section */
 /* End Keyframes (Animations) */
