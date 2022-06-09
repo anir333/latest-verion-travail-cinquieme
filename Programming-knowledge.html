@@ -47,13 +47,36 @@
     </nav>        
     <!-- End Navigations Bar -->
 
+    <!-- Table of contents -->
+    <div class="table-of-contents">
+        <input type="checkbox" name="table-of-contents" id="table-of-contents">
+        <label for="table-of-contents">
+            <h1>Table of contents <span>&#8964;</span></h1>
+        </label>
+        <div class="contents">
+            <a href="#What_is_Programming" class="first-apart">1. What is Programming?</a>
+                <div class="inside-contents-one">
+                    <a href="#definition">1.1. The definition of programming.</a>
+                    <br>
+                    <a href="#things-You-not-know">1.2. 11 things you didn't know about programming.</a>
+                    <br>
+                    <a href="#programming-history">1.3. Programming History</a>
+                    <br>
+                    <a href="#all-programing">1.4. All you can do with programming.</a>
+                    <br>
+                    <a href="#basics_programming">1.5. Basics of programming.</a>
+                </div>
+        </div>
+    </div>
+    <!-- End of Table of contents -->
+
     <!-- Info Section -->
     <div class="info-section">
-        <div class="first">
+        <div class="first" id="What_is_Programming">
             <h1>1. What is Programming?</h1>
             <div class="inside-first">   
-                <p class="p_one">1.1. The definition of programming:</p>
-                    <div class="One">
+                <p class="p_one" id="definition">1.1. The definition of programming:</p>
+                <!----><div class="One">
                         <p>
                         <br>    
                         Programming means writing instructions for a computer to perform desired actions.
@@ -75,350 +98,293 @@
                         <img src="images/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Programming Image">
                     </div>
 
-                <p class="p_two">1.2.&nbsp;&nbsp; 11 things you didn't know about programming:</p>
-                <div class="Two">
-                    Here are eleven programming facts you probably didn't know:
-                    <br> <br>
-                    <ol>
-                        <li>Coding has over 700 languages.</li>
-                        <li>Coding Bugs were NOT named after an actual bug.</li>
-                        <li>Coding will soon be as important as reading.</li>
-                        <li>The first programmer was the daughter of a mad poet.</li>
-                        <li>The first computer virus was a Creeper.</li>                         <li>NASA still operates some projects on programming from the 1970’s.</li>
-                        <li>There is BIG money in programming.</li>
-                        <li>It’s all 0’s and 1’s.</li>
-                        <li>You don’t have to work in tech to use coding.</li>
-                        <li>Computer was a job title, and the first programmers were women.</li>
-                        <li>Coding can “power up” your brain.</li>
-                    </ol>
-                </div>
+                <p class="p_one" id="things-You-not-know">1.2.&nbsp;&nbsp; 11 things you didn't know about programming:</p>
+                    <div class="Two">
+                        Here are eleven programming facts you probably didn't know:
+                        <br><br>
+                        <ol>
+                            <li>Coding has over 700 languages.</li>
+                            <li>Coding Bugs were NOT named after an actual bug.</li>
+                            <li>Coding will soon be as important as reading.</li>
+                            <li>The first programmer was the daughter of a mad poet.</li>
+                            <li>The first computer virus was a Creeper.</li>                         <li>NASA still operates some projects on programming from the 1970’s.</li>
+                            <li>There is BIG money in programming.</li>
+                            <li>It’s all 0’s and 1’s.</li>
+                            <li>You don’t have to work in tech to use coding.</li>
+                            <li>Computer was a job title, and the first programmers were women.</li>
+                            <li>Coding can “power up” your brain.</li>
+                        </ol>
+                    </div>
                 
-                <p class="p_one">1.3. Programming history.</p>
-                <div class="p_three">
-                    <div class="first-line">
-                        <p>
-                            <span>1883:</span> The first programming language was developed in 1883 when Ada Lovelace and Charles Babbage worked together on the Analytical Engine, which was a primitive mechanical computer. Lovelace was able to discern the importance of numbers, realizing that they could represent more than just numerical values of things. Lovelace wrote an algorithm for the Analytical Engine, the first computer program, to compute Bernoulli numbers.
-                        </p>
+                <p class="p_one" id="programming-history">1.3. Programming history.</p>
+                <!----><div class="Three">
+                        <div class="first-line">
+                            <p>
+                                <span>1883:</span> The first programming language was developed in 1883 when Ada Lovelace and Charles Babbage worked together on the Analytical Engine, which was a primitive mechanical computer. Lovelace was able to discern the importance of numbers, realizing that they could represent more than just numerical values of things. Lovelace wrote an algorithm for the Analytical Engine, the first computer program, to compute Bernoulli numbers.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="second-line">
+                            <p>
+                                <span>1949:</span> Assembly language was first used as a type of computer programming language that was able to simplify machine code language, which is necessary for telling a computer what to do.
+                            </p>
+                            <p>
+                                <span>1952:</span> Alick Glennie developed Autocode, which some consider to be the first compiled computer programming language. This means it could be translated directly into machine code.
+                            </p>
+                            <p>
+                                <span>1957:</span> John Backus created FORTRAN, which is a computer programming language for working with scientific, mathematical, and statistical projects.
+                            </p>
+                            <p>
+                                <span>1958:</span> Algol was created as an algorithmic language. It was also a precursor to programming languages such as Java and C.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="third-line">
+                            <p>
+                                <span>1959:</span> COBOL was created by Dr. Grace Murray Hopper to be a language that could operate on all types of computers.
+                            </p>
+                            <p>
+                                <span>1959:</span> John McCarthy created LISP, which is still used today. This programming language was designed for use in artificial intelligence research, and today, it can be used with Python and Ruby.
+                            </p>
+                            <p>
+                                <span>1964:</span> John G. Kemeny and Thomas E. Kurtz developed BASIC for students without a strong background in technology and math, enabling them to still use computers.
+                            </p>
+                            <p>
+                                <span>1970:</span> Niklaus Wirth developed Pascal, naming it after Blaise Pascal. This language is easy to learn and was the main language used by Apple for early software development.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="line-four">
+                            <p>
+                                <span>1972:</span> Alan Kay, Adele Goldberg, and Dan Ingalls developed Smalltalk, which enabled computer programmers to change code quickly.
+                            </p>
+                            <p>
+                                <span>1972:</span> Dennis Ritchie developed C, generally regarded as the first high-level programming language. This means that it's closer to human language and less like machine code.
+                            </p>
+                            <p>
+                                <span>1972:</span> Donald D. Chamberlin and Raymond F. Boyce developed SQL for IBM. This language was used for viewing and changing data stored in databases. 
+                            </p>
+                            <p>
+                                <span>1978:</span> Cleve Moler developed MATLAB for writing math programs. This language is used for research and education.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="fifth-line">
+                            <p>
+                                <span>1983:</span> Brad Cox and Tom Love created Objective-C as the main language used for writing Apple software. 
+                            </p>
+                            <p>
+                                <span>1983:</span> Bjarne Stroustrup created C++, which is an extension of the C programming language. This is one of the most used languages in the world.
+                            </p>
+                            <p>
+                                <span>1987:</span> Larry Wall developed Perl as a scripting language, used for text editing to simplify report processing.
+                            </p>
+                            <p>
+                                <span>1990:</span> Haskell was developed as a functional computer programming language used to process complicated math calculations. 
+                            </p>            
+                        </div>
+                        <br>
+                        <div class="sixth-line">
+                            <p>
+                                <span>1991:</span> Guido Van Rossum developed Python, which is a simplified computer language that is easy to read. 
+                            </p>
+                            <p>
+                                <span>1991:</span> Microsoft developed Visual Basic, which enabled programmers to select and change specific chunks of code with a drag-and-drop process. 
+                            </p>
+                            <p>
+                                <span>1993:</span> Ross Ihaka and Robert Gentleman developed R for statisticians who needed to perform data analysis.
+                            </p>
+                            <p>
+                                <span>1995:</span> Sun Microsystems developed Java, originally intended to be used with hand-held devices. 
+                            </p>
+                        </div>
+                        <br>
+                        <div class="line-seven">
+                            <p>
+                                <span>1995:</span> Rasmus Lerdorf developed PHP, mainly for Web development. PHP continues to be widely used in Web development today. 
+                            </p>
+                            <p>
+                                <span>1995:</span> Yukihiro Matsumoto developed Ruby as an all-purpose programming language, ideal for many programming jobs. Ruby is widely used in the development of Web applications.
+                            </p>
+                            <p>
+                                <span>1995:</span> Brendan Eich developed JavaScript to enhance Web browser interactions.
+                            </p>
+                            <p>
+                                <span>2000:</span> Microsoft developed C# as a combination of C++ and Visual Basic. C# is similar to Java in some ways.  
+                            </p>
+                        </div>
+                        <br>
+                        <div class="eight-line">
+                            <p>
+                                <span>2003:</span> James Strachan and Bob McWhirter developed Groovy as an offshoot of Java.
+                            </p>
+                            <p>
+                                <span>2009:</span> Google developed Go to solve issues that commonly occur with large software systems.
+                            </p>
+                            <p>
+                                <span>2014:</span> Apple developed Swift to replace C, C++, and Objective-C.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="line-nine">
+                            <p>
+                                <span>Today:</span> Computer programming languages in use today were built on the concepts designed in older languages. Many older languages are still in use today or are being used as a foundation for new languages. The newer computer programming languages often aim to simplify the work of programmers. The continual expansion of technology ensures that computer programming languages will remain an integral part of modern life for a long time to come.
+                            </p>
+                        </div>
                     </div>
-                    <br><br>
-                    <div class="second-line">
-                        <p>
-                            <span>1949:</span> Assembly language was first used as a type of computer programming language that was able to simplify machine code language, which is necessary for telling a computer what to do.
-                        </p>
-                        <p>
-                            <span>1952:</span> Alick Glennie developed Autocode, which some consider to be the first compiled computer programming language. This means it could be translated directly into machine code.
-                        </p>
-                        <p>
-                            <span>1957:</span> John Backus created FORTRAN, which is a computer programming language for working with scientific, mathematical, and statistical projects.
-                        </p>
-                        <p>
-                            <span>1958:</span> Algol was created as an algorithmic language. It was also a precursor to programming languages such as Java and C.
-                        </p>
+
+                <p class="p_one" id="all-programing">1.4. All you can do with programming:</p>
+                <!----><div class="Four">
+                        Here are a few amazing things you can do with programming:
+                        <br><br>
+                        <div class="first-three">
+                            <p>
+                            <span>Web development:</span> 
+                            <br> 
+                            If you can program, and you know the programming languages HTML, CSS, and JavaScript, you can create beautiful, modern websites, either for your own use or as a web developer, for your clients.
+                            </p>
+
+                            <p>
+                            <span>Mobile apps:</span>
+                            <br>
+                            We use our phones in more and more situations, you can now pay with your phone instead of a credit card, plan a cycling route and measure your performance, control smartwatches from your phone, order food, and so on. All of this requires mobile apps, and if you can program, you can develop a mobile app to implement any cool idea.
+                            </p>
+
+                            <p>
+                            <span>Desktop applications:</span>
+                            <br>
+                            It’s true that to develop desktop apps you need to have some serious programming skills in programming languages like C++, C# or Java, but it’s not impossible to do, since even the people who developed Microsoft Word or Adobe products (Photoshop, Illustrator) had to start somewhere.
+                            </p>
+                        </div>
+                            
+                        <div class="second-three">
+                            <p>
+                            <span>Game development: </span>
+                            <br>
+                            Are you interested in games? Do you want to be part of the development of a great game, and not just play with it? With programming skills, this is possible. If you can program at a high level in C++, for example, you can be part of a game development team.
+                            </p>
+
+                            <p>
+                            <span>Building and managing databases:</span>
+                            <br>
+                            Small databases can be managed without any programming skills. However, different functions are used even in an Excel spreadsheet if one wants to extract information more efficiently. But for building, maintaining and using a larger database, some knowledge of programming languages such as PHP or SQL is very useful, or in some cases essential. 
+                            </p>
+
+                            <p>
+                            <span>Automation: </span>
+                            <br>
+                            There might be tasks in your work or everyday life that you do over and over again, and it would make your life much easier if they automatically “did themselves”.
+                            <br>
+                            These tasks might include sending emails, posting on social media, or even turning the heating on or off based on the weather forecast.
+                            <br>
+                            If you know a bit of programming, you can automate all these things.
+                            </p>
+                        </div>
+                            
+                        <div class="third-three">
+                            <p>
+                            <span>Statistical Analysis:</span> 
+                            <br>
+                            Programming skills can help you take statistical analysis to a professional level. With knowledge of Python or R, you can enhance any research or analysis with fantastic statistics. 
+                            </p>
+
+                            <p>
+                            <span>System administration jobs:</span>
+                            <br>
+                            System Administrators (sysadmins, sometimes capitalized as SysAdmins) are responsible for the operation, maintenance and reliable functioning of the servers. Their duties include installing and supporting systems, dealing with downtime and other problems. The job usually involves some programming: writing programs (scripts) that automate regular, repetitive tasks.
+                            </p>
+
+                            <p>
+                            <span>DevOps:</span>
+                            <br> 
+                            A DevOps engineer plays a transitional role between the hardware tasks of an administrator and the software tasks of a developer. They can be developers involved in the installation, testing and operation of the infrastructure and the support of the users, or system administrators who are more confident in programming, reviewing, updating and upgrading the code.
+                            </p>
+                        </div>
+                            
+                        <div class="fourth-three">
+                            <p>
+                            <span>Data science: </span>
+                            <br> 
+                            Data science is a complex discipline that combines mathematics, statistics, machine learning, programming skills, presentation skills and expertise in a specific area of research. It is about developing models to make predictions based on the information derived from the data.
+                            </p>
+
+                            <p>
+                            <span>Artificial Intelligence Development:</span>
+                            <br>
+                            Artificial intelligence is the field of science that seeks to research and develop machines capable of making autonomous decisions based on large amounts of data. It does this by using machine learning methods.
+                            <br>
+                            AI controls self-driving cars (e.g. Tesla Autopilot), robots that can sense their environment (e.g. Boston Dynamics robots) and digital assistants that can recognize the voice and interpret speech, such as Siri or Alexa.
+                            </p>
+
+                            <p>
+                            <span>Scientific Research and 
+                            Programming:</span>
+                            <br>
+                            Scientific research often involves the analysis and modelling of large amounts of data, which requires the use of certain programming languages. If you are interested in the natural sciences, it may be a good idea to complement your studies with programming.
+                            </p>
+                        </div>
                     </div>
-                    <br><br>
-                    <div class="third-line">
+               
+                <p class="p_one" id="basics_programming">1.5. Basics of programming:</p>
+                <!----><div class="Five">                    
                         <p>
-                            <span>1959:</span> COBOL was created by Dr. Grace Murray Hopper to be a language that could operate on all types of computers.
+                            <span>1. Variables:</span> 
+                            As the foundation of any computer programming language, variables act as “containers” that “hold” information. These containers then store this information for later use.
+                            <br> <br>
+                            For example, imagine you are visiting the homepage of a website. Once you land on this page, a dialog box pops into view with this simple greeting: “Hi! What’s your name?” This dialog box is a variable! In this code, the programmer could name this variable “visitorName.” This means that when you type your name into the form and hit submit, your information would be stored in the “visitorName” variable. The programmer could then reference this variable at any time to access the information it contains.
                         </p>
+
                         <p>
-                            <span>1959:</span> John McCarthy created LISP, which is still used today. This programming language was designed for use in artificial intelligence research, and today, it can be used with Python and Ruby.
+                            <span>2. Data Structures:</span>
+                            Data structures allow programmers to streamline data collection when a large amount of related information is involved. Let’s go back to our “visitorName” variable from above, but imagine the computer programmer needs to store and reference 10 different visitors’ names rather than just one. 
+                            <br> <br>
+                            Rather than creating 10 different variables for each new visitor — which would increase the sheer amount of text in the program and make adding or removing new contacts difficult — the programmer could simply use a data structure to contain all related variables. In this case, the data structure would be a List. 
+                            <br><br>
+                            With this List data structure, the programmer only needs to create one variable rather than 10, which means the code would be much more flexible to change.
                         </p>
+
                         <p>
-                            <span>1964:</span> John G. Kemeny and Thomas E. Kurtz developed BASIC for students without a strong background in technology and math, enabling them to still use computers.
+                            <span>3. Control Structures:</span>
+                            A control structure analyzes variables and selects a direction in which to go determined from the given parameters. For example, when a computer program is running, the code is being read by the computer line by line from top to bottom and (for the most part) left to right. 
+                            <br><br>
+                            As the code is being read, the computer will reach a point where it needs to make a “decision” (based on strict rules set by the computer programmer). At this point, the code could do things like jump to a different part of the program, re-run a certain piece of code again, or simply skip a block of code altogether. 
+                            <br><br>
+                            Whatever parameters are set by the programmer will affect the code flow. Think of control structures as the directions your program needs to allow it to make choices and execute commands under different conditions.
                         </p>
+
                         <p>
-                            <span>1970:</span> Niklaus Wirth developed Pascal, naming it after Blaise Pascal. This language is easy to learn and was the main language used by Apple for early software development.
-                        </p>
-                    </div>
-                    <br><br>
-                    <div class="line-four">
+                            <span>4. Syntax:</span>
+                            Just like in the English language, computer programming follows a syntax or a set of rules that define particular layouts of letters and symbols. Proper syntax ensures the computer reads and interprets code accurately. For example, let’s consider a simple email address and its required syntax. 
+                            <br><br>
+                            Email addresses are understood by readers and computers immediately due to their format. Typically, email addresses must consist of a string of letters and numbers, followed by the “@” symbol, and finally a website domain (e.g., bob_smith@companyname.com). This structure is known as the standard email syntax! It’s easy to imagine that if the email address were not syntactically correct (company@.comnamebob_smith), computers would not be able to process it.
+                            <br><br>
+                            In a similar fashion, each computer programming language has its own syntax or appropriate order in how code should be written for the program to understand what it is supposed to do.
+                        </p> 
+
                         <p>
-                            <span>1972:</span> Alan Kay, Adele Goldberg, and Dan Ingalls developed Smalltalk, which enabled computer programmers to change code quickly.
-                        </p>
+                            <span>5. Tools:</span>
+                            In the physical world, tools allow workers to perform tasks that would otherwise be extremely difficult (think of how a hammer helps drive a nail into a piece of wood and what this job would be like without tools). Similarly, a tool in computer programming is a piece of software that helps programmers write code much faster. 
+                            <br><br>
+                            For example, one of the most important tools for computer programmers is an Integrated Development Environment (IDE). An IDE can check the syntax of code for errors, organize files, autocomplete commonly used code, and help you easily navigate through your code. Tools are the final crucial element to code, as they streamline processes and ensure accuracy.
                         <p>
-                            <span>1972:</span> Dennis Ritchie developed C, generally regarded as the first high-level programming language. This means that it's closer to human language and less like machine code.
-                        </p>
-                        <p>
-                            <span>1972:</span> Donald D. Chamberlin and Raymond F. Boyce developed SQL for IBM. This language was used for viewing and changing data stored in databases. 
-                        </p>
-                        <p>
-                            <span>1978:</span> Cleve Moler developed MATLAB for writing math programs. This language is used for research and education.
-                        </p>
-                    </div>
-                    <br><br>
-                    <div class="fifth-line">
-                        <p>
-                            <span>1983:</span> Brad Cox and Tom Love created Objective-C as the main language used for writing Apple software. 
-                        </p>
-                        <p>
-                            <span>1983:</span> Bjarne Stroustrup created C++, which is an extension of the C programming language. This is one of the most used languages in the world.
-                        </p>
-                        <p>
-                            <span>1987:</span> Larry Wall developed Perl as a scripting language, used for text editing to simplify report processing.
-                        </p>
-                        <p>
-                            <span>1990:</span> Haskell was developed as a functional computer programming language used to process complicated math calculations. 
-                        </p>            
-                    </div>
-                    <br><br>
-                    <div class="sixth-line">
-                        <p>
-                            <span>1991:</span> Guido Van Rossum developed Python, which is a simplified computer language that is easy to read. 
-                        </p>
-                        <p>
-                            <span>1991:</span> Microsoft developed Visual Basic, which enabled programmers to select and change specific chunks of code with a drag-and-drop process. 
-                        </p>
-                        <p>
-                            <span>1993:</span> Ross Ihaka and Robert Gentleman developed R for statisticians who needed to perform data analysis.
-                        </p>
-                        <p>
-                            <span>1995:</span> Sun Microsystems developed Java, originally intended to be used with hand-held devices. 
-                        </p>
-                    </div>
-                    <br><br>
-                    <div class="seventh-four">
-                        <p>
-                            <span>1995:</span> Rasmus Lerdorf developed PHP, mainly for Web development. PHP continues to be widely used in Web development today. 
-                        </p>
-                        <p>
-                            <span>1995:</span> Yukihiro Matsumoto developed Ruby as an all-purpose programming language, ideal for many programming jobs. Ruby is widely used in the development of Web applications.
-                        </p>
-                        <p>
-                            <span>1995:</span> Brendan Eich developed JavaScript to enhance Web browser interactions.
-                        </p>
-                        <p>
-                            <span>2000:</span> Microsoft developed C# as a combination of C++ and Visual Basic. C# is similar to Java in some ways.  
-                        </p>
-                    </div>
-                    <br><br>
-                    <div class="eight-line">
-                        <p>
-                            <span>2003:</span> James Strachan and Bob McWhirter developed Groovy as an offshoot of Java.
-                        </p>
-                        <p>
-                            <span>2009:</span> Google developed Go to solve issues that commonly occur with large software systems.
-                        </p>
-                        <p>
-                            <span>2014:</span> Apple developed Swift to replace C, C++, and Objective-C.
-                        </p>
-                    </div>
-                    <br><br>
-                    <div class="line-nine">
-                        <p>
-                            Today: Computer programming languages in use today were built on the concepts designed in older languages. Many older languages are still in use today or are being used as a foundation for new languages. The newer computer programming languages often aim to simplify the work of programmers. The continual expansion of technology ensures that computer programming languages will remain an integral part of modern life for a long time to come.
-                        </p>
-                    </div>
                 </div>
-
-
-
-
-
-
-                    <!-- <div class="one">
-                        <p>
-                            1883: The first programming language was developed in 1883 when Ada Lovelace and Charles Babbage worked together on the Analytical Engine, which was a primitive mechanical computer. Lovelace was able to discern the importance of numbers, realizing that they could represent more than just numerical values of things. Lovelace wrote an algorithm for the Analytical Engine, the first computer program, to compute Bernoulli numbers.
-                        </p>
-                    </div>
-                    <div class="two">
-                        <p>
-                            1949: Assembly language was first used as a type of computer programming language that was able to simplify machine code language, which is necessary for telling a computer what to do.
-                        </p>
-                    </div>
-                    <div class="three">
-                        <p>
-                            1952: Alick Glennie developed Autocode, which some consider to be the first compiled computer programming language. This means it could be translated directly into machine code.
-                        </p>
-                    </div>
-                    <div class="four">
-                        <p>
-                            1957: John Backus created FORTRAN, which is a computer programming language for working with scientific, mathematical, and statistical projects.
-                        </p>
-                    </div>
-                    <div class="five">
-                        <p>
-                            1958: Algol was created as an algorithmic language. It was also a precursor to programming languages such as Java and C.
-                        </p>
-                    </div>
-                    <div class="six">
-                        <p>
-                            1959: COBOL was created by Dr. Grace Murray Hopper to be a language that could operate on all types of computers.
-                        </p>
-                    </div>
-                    <div class="seven">
-                        <p>
-                            1959: John McCarthy created LISP, which is still used today. This programming language was designed for use in artificial intelligence research, and today, it can be used with Python and Ruby.
-                        </p>
-                    </div>
-                    <div class="eight">
-                        <p>
-                            1964: John G. Kemeny and Thomas E. Kurtz developed BASIC for students without a strong background in technology and math, enabling them to still use computers.
-                        </p>
-                    </div>
-                    <div class="nine">
-                        <p>
-                            1970: Niklaus Wirth developed Pascal, naming it after Blaise Pascal. This language is easy to learn and was the main language used by Apple for early software development.
-                        </p>
-                    </div>
-                    <div class="ten">
-                        <p>
-                            1972: Alan Kay, Adele Goldberg, and Dan Ingalls developed Smalltalk, which enabled computer programmers to change code quickly.
-                        </p>
-                    </div>
-                    <div class="eleven">
-                        <p>
-                            1972: Dennis Ritchie developed C, generally regarded as the first high-level programming language. This means that it's closer to human language and less like machine code.
-                        </p>
-                    </div>
-                    <div class="twelve">
-                        <p>
-                            1972: Donald D. Chamberlin and Raymond F. Boyce developed SQL for IBM. This language was used for viewing and changing data stored in databases. 
-                        </p>
-                    </div>
-                    <div class="thirteen">
-                        <p>
-                            1978: Cleve Moler developed MATLAB for writing math programs. This language is used for research and education.
-                        </p>
-                    </div>
-                    <div class="fourteen">
-                        <p>
-                            1983: Brad Cox and Tom Love created Objective-C as the main language used for writing Apple software. 
-                        </p>
-                    </div>
-                    <div class="fifteen">
-                        <p>
-                            1983: Bjarne Stroustrup created C++, which is an extension of the C programming language. This is one of the most used languages in the world.
-                        </p>
-                    </div>
-                    <div class="sixteen">
-                        <p>
-                            1987: Larry Wall developed Perl as a scripting language, used for text editing to simplify report processing.
-                        </p>
-                    </div>
-                    <div class="seventeen">
-                        <p>
-                            1990: Haskell was developed as a functional computer programming language used to process complicated math calculations. 
-                        </p>
-                    </div>
-                    <div class="eighteen">
-                        <p>
-                            1991: Guido Van Rossum developed Python, which is a simplified computer language that is easy to read. 
-                        </p>
-                    </div>
-                    <div class="nineteen">
-                        <p>
-                            1991: Microsoft developed Visual Basic, which enabled programmers to select and change specific chunks of code with a drag-and-drop process. 
-                        </p>
-                    </div>
-                    <div class="twenty">
-                        <p>
-                            1993: Ross Ihaka and Robert Gentleman developed R for statisticians who needed to perform data analysis.
-                        </p>
-                    </div>
-                    <div class="twenty-one">
-                        <p>
-                            1995: Sun Microsystems developed Java, originally intended to be used with hand-held devices. 
-                        </p>
-                    </div>
-                    <div class="twenty-two">
-                        <p>
-                            1995: Rasmus Lerdorf developed PHP, mainly for Web development. PHP continues to be widely used in Web development today. 
-                        </p>
-                    </div>
-                    <div class="twenty-three">
-                        <p>
-                            1995: Yukihiro Matsumoto developed Ruby as an all-purpose programming language, ideal for many programming jobs. Ruby is widely used in the development of Web applications.
-                        </p>
-                    </div>
-                    <div class="twenty-four">
-                        <p>
-                            1995: Brendan Eich developed JavaScript to enhance Web browser interactions.
-                        </p>
-                    </div>
-                    <div class="twenty-five">
-                        <p>
-                            2000: Microsoft developed C# as a combination of C++ and Visual Basic. C# is similar to Java in some ways.  
-                        </p>
-                    </div>
-                    <div class="twenty-six">
-                        <p>
-                            2003: James Strachan and Bob McWhirter developed Groovy as an offshoot of Java.
-                        </p>
-                    </div>
-                    <div class="twenty-seven">
-                        <p>
-                            2009: Google developed Go to solve issues that commonly occur with large software systems.
-                        </p>
-                    </div>
-                    <div class="twenty-eight">
-                        <p>
-                            2014: Apple developed Swift to replace C, C++, and Objective-C.
-                        </p>
-                    </div>
-                    <div class="twenty-nine">
-                        <p>
-                            Today: Computer programming languages in use today were built on the concepts designed in older languages. Many older languages are still in use today or are being used as a foundation for new languages. The newer computer programming languages often aim to simplify the work of programmers. The continual expansion of technology ensures that computer programming languages will remain an integral part of modern life for a long time to come.
-                        </p>
-                    </div>
-                </div> -->
-
-                <p>1.4. All you can do with programming.</p>
-                <p>1.5. Basics of programming.</p>
             </div>
         </div>
     </div> 
     <!-- End of the Info Section -->
 
-
-
-
-
-
-
-
-
-    <pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </pre>
+    <!-- Button Check Programming Languages -->
+    <div class="Check-Programming-Languages" id="buttons">
+        <a href="Programming-Languages.html">
+            <Button>Click here to discover more about programming languages!</Button>
+        </a>
+        <a href="#What_is_Programming">
+            <button>
+                Go back up!
+                &#8686;
+            </button>
+        </a>
+    </div>
+    <!-- End Button Check Programming Languages -->
 </body>
 </html>
