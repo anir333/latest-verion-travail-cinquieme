@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&display=swap');
+
+
+/* GENERAL (Body, website margins) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /* background: linear-gradient(115deg, #71b7e6, #9b59b6); */
+    /* animation: boy_background 25s infinite; */
+    background-image: linear-gradient(115deg, #71b7e6, #0c88db, #5124ba,/* #6503c8,*/ /*#8b6edb,*/ #9b59b6, #5124ba, #0c88db, #71b7e6);
+    background-size: 1000%; 
+    animation: body-background 15s infinite alternate-reverse;
+    /* transition: background-position 1s; */
+}
+/* End GENERAL (Body, website margins) */
+
+/* Navigation Bar */
+nav {
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+}
+nav ul a {
+    flex-basis: 10%;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    border: 0px solid red;
+    margin: auto 3px;
+    padding: 20px;
+    box-shadow: rgba(30, 77, 123, .7) 10px 18px 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    animation:  nav_bar_hover_off ease-in-out .5s forwards;
+    background-color: none;
+    transition: .9s;
+}
+nav ul a:nth-child(3) { 
+    background-image: linear-gradient(315deg, #26c2c2 0%, #ab55a8 74%);
+}
+nav ul a:nth-child(2), nav ul a:nth-child(3) {
+    padding: 10px;
+}
+nav ul a:hover {
+    background-color: white;
+    transition: .3s;
+    opacity: 88%;
+    color: black;
+    animation:  nav_bar_hover_on ease-in-out .5s forwards;
+    box-shadow: white 30px 10px 0px 10px rgba(30, 77, 123, .5);
+}
+/* End Navigation BAR */
+
+/* Table of Contents */
+.table-of-contents {
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 80%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: white;
+}
+.table-of-contents h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+.table-of-contents .contents a {
+    text-decoration: none;
+    color: white;
+}
+.table-of-contents .contents a:hover {
+    text-decoration: underline;
+}
+.table-of-contents .contents .title-programming-languages {
+    text-decoration: underline;
+}
+.table-of-contents .contents .title-programming-languages:hover {
+    text-decoration: none;
+}
+.table-of-contents .contents {
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    /* height: 250px; */
+    box-shadow: rgba(18, 26, 34, 0.7) -10px 10px 18px 24px;
+    /* box-shadow: 0px 10px 5px rgb(1, 1, 1), 0px -10px 5px rgb(1, 1, 1); */
+    font-weight: bold;
+    /* padding-left: 25px;
+    padding-top: 35px; */
+    font-size: 18px;
+    line-height: 29px;
+    animation: table-of-contents-shrink-off 1s forwards;
+}
+.table-of-contents .contents .inside-contents-one {
+    margin-left: 30px;
+}
+input[type="checkbox"] {
+    display: none;   
+}
+input[type="checkbox"]:checked ~ .contents {
+    animation: table-of-contents-shrink 1s forwards;
+}
+input[type="checkbox"]:not(:checked) ~ .contents a {
+    font-size: 0.1px;
+    cursor: default;
+}
+input[type="checkbox"]:not(:checked) ~ .contents a {
+    opacity: 0%;
+    transition: .3s;
+}
+input[type="checkbox"]:checked ~ .contents a {
+    opacity: 100%;
+    transition: .8s;
+    font-size: 18px;
+    transition-delay: .7s;
+}
+/* End Table of Contents */
+
+
+/* Boxes */
+.boxes {
+    margin: auto;
+    margin-top: 70px;
+    width: 80%;
+}
+.boxes div {
+    /* border: 1px solid rgb(24, 23, 23); */
+    margin: 30px;
+    padding: 15px;
+    background-image: linear-gradient(115deg, #71b7e6, #0c88db, #5124ba, #9b59b6, #5124ba, #0c88db,  #71b7e6);
+    border-radius: 20px;
+    text-align: justify;
+    line-height: 25px;
+    animation: programming-history-boxes-off 1s forwards;
+}
+.boxes div:hover {
+    animation: programming-history-boxes 1s forwards;
+}
+.boxes div h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+    padding: 15px;
+    border-bottom: 2px solid white;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 90%;
+}
+.boxes div p {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.boxes div span {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 600;
+    text-align: justify;
+    padding: 100px;
+}
+.boxes div span ul > ul {
+    margin-left: 45px;
+}
+.boxes div span ul {
+    margin-left: 50px;
+}
+.boxes div h2 {
+    color: black;
+    margin: 10px 10px;
+}
+/* End boxes */
+
+
+/* Buttons */
+.Check-Html-CSS {
+    text-align: center;
+}
+.Check-Html-CSS button {
+    animation: programming-history-boxes-off .7s forwards;
+}
+.Check-Html-CSS button:hover {
+    animation: programming-history-boxes .7s forwards;
+    cursor: pointer;
+}
+.Check-Html-CSS a button {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 30px;
+    background-color: navajowhite;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Check-Html-CSS a button:nth-child(2) {
+    font-size: large;
+    background-color: green;
+    color: white;
+}
+.Check-Html-CSS a {
+    border: none;
+    background-color: none;
+}
+/* End Buttons */
+
+
+/* Keyframes (Animations) */
+    /* Body Animation Keyframes */
+    @keyframes body-background {
+        0% {
+            background-position: left;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+    /* End Body Animation Keyframes */
+
+    /* Nav Bar Keyframes */
+    @keyframes nav_bar_hover_on {
+        100% {
+            margin-left: 33px;
+            margin-right: 33px;
+            padding-left: 43px;
+            padding-right: 43px;
+        }
+        0% {}
+    }
+    @keyframes nav_bar_hover_off {
+        0% {
+            margin-left: 33px;
+            margin-right: 33px;
+            padding-left: 33px;
+            padding-right: 33px;
+        }
+        100% {}
+    }
+    /* End Nav Bar Keyframes */
+
+    /* Table of contents keyframes */
+    @keyframes display-text-off {
+        0% {display: block;}
+        99% {display: block;}
+       100% {display: none;}
+    }
+    @keyframes display-text {
+        100% {display: none;}
+        99% {display: none;}
+        0% {display: block;}
+    }
+    @keyframes table-of-contents-shrink {
+        0% {
+            height: 0px;
+        }
+        100% {
+            height: 330px;
+            padding-left: 25px;
+            padding-top: 35px;
+        }
+    }
+    @keyframes table-of-contents-shrink-off {
+        0% {
+            height: 330px;
+            padding-left: 25px;
+            padding-top: 35px;
+        }
+        100% {
+            height: 0px;
+        }
+    }
+    /* End table of contents keyframes */    
+
+    /* Boxes */
+    @keyframes programming-history-boxes {
+        0% {}
+        100% {
+            box-shadow: rgba(30, 77, 123, .7) 1px 1px 10px 14px;  
+        } 
+    }
+    @keyframes programming-history-boxes-off {
+        0% {
+            box-shadow: rgba(30, 77, 123, .7) 1px 1px 10px 14px;  
+        }
+        100% {}
+    }
+    /* End Boxes */
+/* End Keyframes (Animations) */
