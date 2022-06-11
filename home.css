@@ -276,14 +276,17 @@ nav ul a:hover {
 
 /* Go to menu Section */
 .Go-TO-Menu {
-    /* border: 2px solid green; */
     height: 80px;
     text-align: center;
     margin: auto;
     margin-top: 77px;
     width: 40%;
     border-radius: 10px;
-    box-shadow: 3px 7px 22px 11px rgba(0,0,0,0.89);
+    background-color: #fbd3a2;
+    animation: button-down-off .5s forwards;
+}
+.Go-TO-Menu:hover {
+    animation: button-down .5s forwards;
 }
 .Go-TO-Menu a {
     text-decoration: none;
@@ -1007,6 +1010,22 @@ nav ul a:hover {
         }
     }
     /* End Introduction page keyframes */
+
+    
+    /* Go to grid section */
+    @keyframes button-down {
+        0% {}
+        100% {
+            box-shadow: 3px 7px 22px 11px rgba(0,0,0,0.89);
+        }
+    }
+    @keyframes button-down-off {
+        0% {
+            box-shadow: 3px 7px 22px 11px rgba(0,0,0,0.89);
+        }
+        100% {}
+    }
+    /* End of go to grid section */
 
     /* Final/Grid Section */    
     @keyframes text-up-hover-programming-knowledge {
