@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages - Techno Academy</title>
+    <link rel="stylesheet" href="Html-CSS.css">
+</head>
+<body>
+
+    <!-- Navigations Bar -->
+    <nav id="nav-bar">
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="Programming-knowledge.html">
+                <li>Programming <br> Knowledge</li>
+            </a>
+            <a href="Programming-Languages.html">
+                <li>Programming <br> Languages</li>
+            </a>
+            <a href="Html-CSS.html">
+                <li>Html/CSS</li>
+            </a>
+            <a href="#JavaScript">
+                <li>JavaScript</li>
+            </a>
+            <a href="#Python">
+                <li>Python</li>
+            </a>
+            <a href="#Ruby">
+                <li>Ruby</li>
+            </a>
+            <a href="#SQL">
+                <li>SQL</li>
+            </a>
+            <a href="#Swift">
+                <li>Swift</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <!-- End Navigations Bar -->
+
+    <!-- Table of contents -->
+    <div class="table-of-contents">
+        <input type="checkbox" name="table-of-contents" id="table-of-contents" checked>
+        <label for="table-of-contents" id="table">
+            <h1>Table of contents <span>&#8964;</span></h1>
+        </label>
+        <div class="contents">
+            <a href="#Html" class="title-programming-languages">
+                1. Html:
+            </a>
+                <div class="inside-contents-one">
+                    <a href="#about-html">1.1. About:
+                    </a>
+                    <br>
+                    <a href="#History-Html">1.2. History:
+                    </a>
+                    <br>
+                    <a href="#Introduction-Html">1.3. Introduction to the language:
+                    </a>
+                    <br>
+                    <a href="#Basics-Html">1.4. Html Basics:
+                    </a>
+                </div>
+                <br>
+                <a href="#CSS" class="title-programming-languages">
+                    2. CSS:
+                </a>
+                <div class="inside-contents-one">
+                    <a href="#about-CSS">1.1. About:
+                    </a>
+                    <br>
+                    <a href="#History-CSS">1.2 History:
+                    </a>
+                    <br>
+                    <a href="#Introduction-CSS">1.3. Introduction to the language:
+                    </a>
+                    <br>
+                    <a href="#Basics-CSS">1.4. CSS Basics:
+                    </a>
+                    <br>
+                </div>
+        </div>
+    </div>
+    <!-- End of Table of contents -->
+
+    <!-- Page content wrapper -->
+    <div class="content-page-wrapper">
+
+        <!-- HTML -->
+        <div class="Html" id="Html">
+            <h1>Html</h1>
+            <div class="about-html" id="about-html">
+                <h2>1. About:</h2>
+                <p>
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. 
+
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                </p>
+            </div>
+
+            <br><br> 
+
+            <div class="History-Html" id="History-Html">
+                <h2>2. History:</h2>
+                <p>
+                    The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.
+                </p>
+            </div>
+
+            <br><br>
+
+            <div class="Introduction-Html" id="Introduction-Html">
+                <h2>3. Introduction to the language:</h2>
+                <div class="inside-intro-html">
+                    <ul>
+                        <li>HTML stands for Hyper Text Markup Language.</li>
+                        <li>HTML is the standard markup language for creating Web pages.</li>
+                        <li>HTML describes the structure of a Web page.</li>
+                        <li>HTML consists of a series of elements.</li>
+                        <li>HTML elements tell the browser how to display the content.</li>
+                        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+                    </ul>
+                    
+                    <br>
+                    
+                    <h3>A Simple HTML Document:</h3>
+                    <img src="images/Html-Example1.png" alt="HTML Document Example">
+                    <h3>Example Explained:</h3>
+                        <ul>
+                            <li>The '< !DOCTYPE html >' declaration defines that this document is an HTML5 document.</li>
+                            <li>The '< html >' element is the root element of an HTML page.</li>
+                            <li>The '< head >' element contains meta information about the HTML page
+                            <li>The '< title >' element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).</li>
+                            <li>The '< body >' element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                            <li>The '< h1 >' element defines a large heading.</li>
+                            <li>The '< p >' element defines a paragraph.</li>
+                        </ul>
+
+                    <br>
+
+                    <h3>What is an HTML Element?</h3>
+                    <p>    
+                        An HTML element is defined by a start tag, some content, and an end tag: 
+                        <br>
+                        '< tagname >'  Content goes here... '< /tagname >'.
+                        <br>
+                        The HTML element is everything from the start tag to the end tag:
+                        <br>
+                        '< h1 >' My First Heading '< /h1 >'
+                        '< p >'My first paragraph. '< /p >'
+                    </p>
+                    <br>
+                    <img src="images/Html-Example2.png" alt="HTML Headings Example">
+
+                    <br><br>
+
+                    <h3>Web Browsers:</h3>
+                    <p>
+                        The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+                        <br>
+                        A browser does not display the HTML tags, but uses them to determine how to display the document:
+                    </p>
+                    <br>
+                    <img src="images/html-introexapmle3.png" alt="Web Browser Example">
+
+                    <br><br>
+
+                    <h3>HTML Page Structure:</h3>
+                    <p>Below is a visualization of an HTML page structure:</p>
+                    <br>
+                    <img src="images/html-lastexample-intro.png" alt="HTML Page Structure Example">
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="Basics-Html" id="Basics-Html">
+                <h2>4. Html Basics:</h2>
+                <div class="inside-basics-html">
+                    <h3>HTML Documents:</h3>
+                    <p>
+                        All HTML documents must start with a document type declaration: '< !DOCTYPE html >'.
+                        <br>
+                        The HTML document itself begins with '< html >' and ends with '< /html >'.
+                        <br>
+                        The visible part of the HTML document is between '< body >' and '< /body >''.                            
+                    </p>
+
+                    <br>
+
+                    <h3>The <!DOCTYPE> Declaration:</h3>
+                    <p>
+                        The '< !DOCTYPE >' declaration represents the document type, and helps browsers to display web pages correctly.
+                        <br>
+                        It must only appear once, at the top of the page (before any HTML tags).
+                        The <!DOCTYPE> declaration is not case sensitive.
+                    </p>
+
+                    <br>
+
+                    <h3>HTML Headings:</h3>
+                    <p>
+                        HTML headings are defined with the '< h1 >' to '< h6 >'' tags. 
+                        <br>
+                        '< h1 >' defines the most important heading. '< h6 >' defines the least important heading: 
+                    </p>
+                    <br>
+                    <img src="images/html-basics-example1.png" alt="HTML Headings Basics Example">
+
+                    <br>
+
+                    <h3>HTML Paragraphs:</h3>
+                    <p>
+                        HTML paragraphs are defined with the '< p >' tag:
+                    </p>
+                    <br>
+                    <img src="images/html-basics-example2.png" alt="HTML Paragraphs Basics Example">
+
+                    <br>
+
+                    <h3>HTML Links:</h3>
+                    <p>
+                        HTML links are defined with the '< a >' tag:
+                    </p>
+                    <br>
+                    <img src="images/html-basics-example3.png" alt="HTML Links Basics Example">
+                    <br><br>
+                    <p>
+                        The link's destination is specified in the href attribute. 
+                        <br>
+                        Attributes are used to provide additional information about HTML elements.
+                    </p>
+
+                    <br>
+
+                    <h3>HTML Images:</h3>
+                    <p>
+                        HTML images are defined with the '< img >'' tag.
+                        <br>
+                        The source file (src), alternative text (alt), width, and height are provided as attributes:
+                    </p>
+                    <br>
+                    <img src="images/html-basics-exemple4.png" alt="HTML Images Basics Example">
+
+                    <br><br>
+
+                    <h3>How to View HTML Source?</h3>
+                        <h4>View HTML Source Code:</h4>
+                        <p>
+                            Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.
+                        </p>
+                        <h4>Inspect an HTML Element:</h4>
+                        <p>
+                            Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!-- End HTML -->
+
+        <br><br><br>
+
+        <!-- CSS -->
+        <div class="CSS" id="CSS">
+            <h1>CSS</h1>
+
+            <div class="about-CSS" id="about-CSS">
+                <h2>1. About:</h2>
+                <p>
+                    Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                    <br><br>
+                    CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+                </p>
+            </div>
+
+            <br><br>
+
+            <div class="History-CSS" id="History-CSS">
+                <h2>2. History:</h2>
+                <p>
+                    CSS was first proposed by Håkon Wium Lie on 10 October 1994. At the time, Lie was working with Tim Berners-Lee at CERN. Several other style sheet languages for the web were proposed around the same time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first W3C CSS Recommendation (CSS1) being released in 1996. In particular, a proposal by Bert Bos was influential; he became co-author of CSS1, and is regarded as co-creator of CSS.
+                    <br><br>
+                    Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web. One requirement for a web style sheet language was for style sheets to come from different sources on the web. Therefore, existing style sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style be influenced by multiple style sheets by way of "cascading" styles.
+                    <br><br>
+                    As HTML grew, it came to encompass a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the designer more control over site appearance, at the cost of more complex HTML. Variations in web browser implementations, such as ViolaWWW and WorldWideWeb, made consistent site appearance difficult, and users had less control over how web content was displayed. The browser/editor developed by Tim Berners-Lee had style sheets that were hard-coded into the program. The style sheets could therefore not be linked to documents on the web. Robert Cailliau, also of CERN, wanted to separate the structure from the presentation so that different style sheets could describe different presentation for printing, screen-based presentations, and editors.
+                </p>
+            </div>
+
+            <br><br>
+
+            <div class="Introduction-CSS" id="Introduction-CSS">
+                <h2>3. Introduction to the language:</h2>
+                <div class="inside-intro-css">
+                    <h3>Syntax:</h3>
+                    <p>
+                        CSS has a simple syntax and uses a number of English keywords to specify the names of various style properties.
+                        <br>
+                        A style sheet consists of a list of rules. Each rule or rule-set consists of one or more <cite>selectors</cite>, and a <cite>declaration block</cite>.
+                    </p>
+
+                    <br>
+
+                    <h3>Selector:</h3>
+                    <p>
+                        In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself.
+                        <br>
+                        Selectors may apply to the following:
+                    </p>
+                    <ul>
+                        <li>all elements of a specific type, e.g. the second-level headers h2
+                        </li>
+                        <li>elements specified by attribute, in particular:</li>
+                        <ul>
+                            <li>id: an identifier unique within the document, identified with a hash prefix e.g. #id</li>
+                            <li>class: an identifier that can annotate multiple elements in a document, identified with a period prefix e.g. .classname</li>
+                        </ul>
+                        <li>elements depending on how they are placed relative to others in the document tree.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.
+                        <br><br>
+                        Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree. One example of a widely used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover. A pseudo-class classifies document elements, such as :link or :visited, whereas a pseudo-element makes a selection that may consist of partial elements, such as ::first-line or ::first-letter.
+                        <br><br>
+                        Selectors may be combined in many ways to achieve great specificity and flexibility. Multiple selectors may be joined in a spaced list to specify elements by location, element type, id, class, or any combination thereof. The order of the selectors is important. For example, div .myClass {color: red;} applies to all elements of class myClass that are inside div elements, whereas .myClass div {color: red;} applies to all div elements that are inside elements of class myClass. This is not to be confused with concatenated identifiers such as div.myClass {color: red;} which applies to div elements of class myClass.
+                        <br><br>
+                        The following table provides a summary of selector syntax indicating usage and the version of CSS that introduced it.
+                    </p>
+                    <br>
+                    <img src="images/CSS-example1.png" alt="CSS Table">
+                    <img src="images/CSS-example1-part2.png" alt="CSS Table Part 2">
+                    <img src="images/CSS-exapmle1-part3-lastpart.png" alt="CSS table part 3">
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="Basics-CSS" id="Basics-CSS">
+                <h2>4. CSS Basics:</h2>
+                <div class="inside-basics-css">
+                    <h3>Declaration block:</h3>
+                    <p>
+                        A declaration block consists of a list of declarations in braces. Each declaration itself consists of a property, a colon (:), and a value. If there are multiple declarations in a block, a semi-colon (;) must be inserted to separate each declaration. An optional semi-colon after the last (or single) declaration may be used.
+                        <br><br>
+                        Properties are specified in the CSS standard. Each property has a set of possible values. Some properties can affect any type of element, and others apply only to particular groups of elements.
+                        <br><br>
+                        Values may be keywords, such as "center" or "inherit", or numerical values, such as 200px (200 pixels), 50vw (50 percent of the viewport width) or 80% (80 percent of the parent element's width). Color values can be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000, also abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. rgb(255, 0, 0)), RGBA values that specify both color and alpha transparency (e.g. rgba(255, 0, 0, 0.8)), or HSL or HSLA values (e.g. hsl(000, 100%, 50%), hsla(000, 100%, 50%, 80%)).
+                    </p>
+                    <h3>Length units:</h3>
+                    <p>
+                        Non-zero numeric values representing linear measures must include a length unit, which is either an alphabetic code or abbreviation, as in 200px or 50vw; or a percentage sign, as in 80%. Some units – cm (centimetre); in (inch); mm (millimetre); pc (pica); and pt (point) – are absolute, which means that the rendered dimension does not depend upon the structure of the page; others – em (em); ex (ex) and px (pixel) – are relative, which means that factors such as the font size of a parent element can affect the rendered measurement. These eight units were a feature of CSS 1 and retained in all subsequent revisions. The proposed CSS Values and Units Module Level 3 will, if adopted as a W3C Recommendation, provide seven further length units: ch; Q; rem; vh; vmax; vmin; and vw.
+                    </p>
+                    <h3>Use:</h3>
+                    <p>
+                        Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS lets authors move much of that information to another file, the style sheet, resulting in considerably simpler HTML.
+                        <br><br>
+                        For example, headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is <cite>presentational</cite>.
+                        <br><br>
+                        Before CSS, document authors who wanted to assign such typographic characteristics to, say, all h2 headings had to repeat HTML presentational markup for each occurrence of that heading type. This made documents more complex, larger, and more error-prone and difficult to maintain. CSS allows the separation of presentation from structure. CSS can define color, font, text alignment, size, borders, spacing, layout and many other typographic characteristics, and can do so independently for on-screen and printed views. CSS also defines non-visual styles, such as reading speed and emphasis for aural text readers. The W3C has now deprecated the use of all presentational HTML markup.
+                        <br><br>
+                        For example, under pre-CSS HTML, a heading element defined with red text would be written as:
+                    </p>
+                    <br>
+                    <img src="images/CSS-example2.png" alt="Font CSS Example">
+                    <br><br>
+                    <p>
+                        Using CSS, the same element can be coded using style properties instead of HTML presentational attributes:
+                    </p>
+                    <br>
+                    <img src="images/CSS-example3.png" alt="Style CSS Example">
+                    <br><br>
+                    <p>
+                        The advantages of this may not be immediately clear but the power of CSS becomes more apparent when the style properties are placed in an internal style element or, even better, an external CSS file. For example, suppose the document contains the style element:
+                    </p>
+                    <br>
+                    <img src="images/CSS-example4.png" alt="Style Tag Example">
+                    <br><br>
+                    <p>
+                        All h1 elements in the document will then automatically become red without requiring any explicit code. If the author later wanted to make h1 elements blue instead, this could be done by changing the style element to:
+                    </p>
+                    <br>
+                    <img src="images/CSS-example5.png" alt="h1 elements example">
+                    <br>
+                    <p>
+                        Rather than by laboriously going through the document and changing the color for each individual h1 element.
+                        <br><br>
+                        The styles can also be placed in an external CSS file, as described below, and loaded using syntax similar to:
+                    </p>
+                    <br>
+                    <img src="images/CSS-example6.png" alt="Link CSS example">
+                    <br><br>
+                    <p>
+                        This further decouples the styling from the HTML document and makes it possible to restyle multiple documents by simply editing a shared external CSS file.
+                    </p>
+                </div>
+            </div>            
+        </div>
+        <!-- End CSS -->
+    </div>
+    <!-- End content page wrapper -->
+
+    <!-- Button Check JavaScript and Go Up. -->
+    <div class="Check-JavaScript" id="buttons">
+        <a href="JavaScript.html">
+            <Button>Click here to discover more about JavaScript!</Button>
+        </a>
+        <a href="#nav-bar">
+            <button>
+                Go back up!
+                &#8686;
+            </button>
+        </a>
+    </div>
+    <!-- End Button Check JavaScript and Go Up. -->
+
+</body>
+</html>
