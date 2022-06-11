@@ -290,10 +290,7 @@ nav ul a:hover {
 }
 .Go-TO-Menu a {
     text-decoration: none;
-    color: white;
     font-size: 25px;
-    /* border: 1px solid red; */
-    /* width: 100%; */
 }
 .Go-TO-Menu .symbol {
     font-size: 35px;
